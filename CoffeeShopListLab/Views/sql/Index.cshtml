@@ -1,0 +1,24 @@
+﻿@model List<Drink>
+
+
+
+
+
+
+
+<ul>
+	@{
+
+		foreach (Drink d in Model)
+		{
+			<li>
+				<a asp-controller="sql" asp-action="Details" asp-route-id="@d.Id">@d.Name</a>
+
+			</li>
+
+		}
+
+	}
+
+
+</ul>
